@@ -1,0 +1,189 @@
+/* Color Palette */
+:root {
+  --primary-color: #424800;
+  --secondary-color: #889400;
+  --background-color: #fff1a6;
+  --text-color: #1d1f00;
+  --accent-color: #007BFF;
+  --light-gray: #eaeaea;
+  --nude: #fff1a6;
+  --orange: #deb92c;
+  --golden: #ffd600;
+  --lima: #ccd850;
+  --green: #889400;
+  --dark-green: #424800;
+  --gray: #666;
+  --white: #fff;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+p {
+  line-height: 1.6;
+  margin: 15px;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--box-shadow-color);
+}
+
+.titulo-cinza {
+  color: var(--gray);
+  margin-bottom: 15px;
+}
+
+/* List of Presents */
+#lista-presentes img.QRcodePix {
+  width: 150px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Footer Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+.ReSData {
+  margin-top: 15px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--light-gray);
+  background-image: url('img/cangaceiros.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  opacity: 0.8;
+}
+
+.ReSData h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.ReSData h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.iiHstv {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .footer p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 14px;
+  text-align: center; /* Align text to the center of the page */
+}
+
+.text-box {
+  margin-top: 45px;
+}
+
