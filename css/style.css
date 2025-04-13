@@ -33,7 +33,20 @@ body {
   background-image: url('img/background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* Acompanha a rolagem */
+  min-height: 200vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 241, 166, 0.6); /* tom da cor de fundo com opacidade */
+  z-index: -1;
 }
 
 h1, h2, h3 {
@@ -60,11 +73,13 @@ img {
 header {
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 15px 0;
+  font-family: "Charm", cursive;
+  padding: 50px 0; /* Reduced padding to remove extra space */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  font-size: 1.2em; /* Increased font size */
 }
 
 header nav ul {
@@ -83,12 +98,27 @@ header nav ul li a {
   color: var(--white);
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.9em; /* Increased font size */
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* ==========================
+  Header Font Styles
+  ========================== */
+.league-script-regular {
+  font-family: "League Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.charm-regular {
+  font-family: "Charm", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 /* ==========================
   Section Styles
   ========================== */
@@ -142,16 +172,16 @@ nav ul li a:hover {
   Welcome Section
   ========================== */
 .ReSData {
-  margin-top: 20px;
+  margin-top: 150px;
   text-align: center;
   padding: 20px;
-  background-color: var(--light-gray);
-  background-image: url('img/cangaceiros.jpg');
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.8); /* fundo branco translúcido */
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px); /* se quiser um efeito de vidro fosco */
+
 }
+
 
 .ReSData h1 {
   font-size: 2.5em;
@@ -169,22 +199,30 @@ nav ul li a:hover {
   border-radius: 8px;
 }
 
+h1, h2 {
+  font-family: 'Arial', cursive;
+}
+
 /* ==========================
   Responsive Design
   ========================== */
-@media (max-width: 768px) {
-  header nav ul {
-   flex-direction: column;
+  @media (max-width: 768px) {
+    .ReSData h1 {
+      font-size: 1.8em;
+    }
+  
+    .ReSData h2 {
+      font-size: 1.2em;
+    }
+  
+    img.QRcodePix {
+      width: 100px;
+    }
+  
+    section {
+      margin: 10px;
+    }
   }
-
-  header nav ul li {
-   margin: 10px 0;
-  }
-
-  section {
-   padding: 15px;
-  }
-}
 
 /* ==========================
   Footer Styles
@@ -203,11 +241,4 @@ footer .footer p {
   color: var(--text-color);
   font-size: 14px;
   text-align: center;
-}
-
-/* ==========================
-  Miscellaneous
-  ========================== */
-.text-box {
-  margin-top: 705px;
 }
