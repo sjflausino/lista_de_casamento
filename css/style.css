@@ -74,12 +74,13 @@ header {
   background-color: var(--primary-color);
   color: var(--white);
   font-family: "Charm", cursive;
-  padding: 50px 0; /* Reduced padding to remove extra space */
+  padding: 80px 0; /* Adjusted padding for better spacing */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   font-size: 1.2em; /* Increased font size */
+  box-shadow: 0 2px 5px var(--box-shadow-color); /* Added shadow for better visibility */
 }
 
 header nav ul {
@@ -103,6 +104,10 @@ header nav ul li a {
 
 header nav ul li a:hover {
   text-decoration: underline;
+}
+
+body {
+  padding-top: 65px; /* Added padding to prevent content overlap with fixed header */
 }
 
 /* ==========================
