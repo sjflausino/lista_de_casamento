@@ -23,18 +23,11 @@
   General Styles
   ========================== */
 
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
   color: var(--text-color);
-  background-image: url('img/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll; /* Acompanha a rolagem */
   min-height: 200vh;
 }
 
@@ -45,7 +38,6 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255, 241, 166, 0.6); /* tom da cor de fundo com opacidade */
   z-index: -1;
 }
 
@@ -74,8 +66,7 @@ header {
   background-color: var(--primary-color);
   color: var(--white);
   font-family: "Charm", cursive;
-  padding: 80px 0; /* Adjusted padding for better spacing */
-  position: fixed;
+  padding: 30px 0; /* Adjusted padding for better spacing */
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -177,20 +168,18 @@ nav ul li a:hover {
   Welcome Section
   ========================== */
 .ReSData {
-  margin-top: 150px;
   text-align: center;
+  margin-top: 20px;
+  margin-top: 20px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* fundo branco translúcido */
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(4px); /* se quiser um efeito de vidro fosco */
 
 }
-
 
 .ReSData h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  font-family: "Charm", cursive;
+
 }
 
 .ReSData h2 {
@@ -198,11 +187,6 @@ nav ul li a:hover {
   margin-bottom: 5px;
 }
 
-.iiHstv {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  border-radius: 8px;
-}
 
 h1, h2 {
   font-family: 'Arial', cursive;
@@ -246,4 +230,13 @@ footer .footer p {
   color: var(--text-color);
   font-size: 14px;
   text-align: center;
+}
+
+.lista_img {
+  width: 300px; /* Adjusted width for consistent proportions */
+  height: 300px; /* Adjusted height for consistent proportions */
+  object-fit: cover; /* Ensures images maintain aspect ratio while filling the dimensions */
+  display: block; /* Centers images when combined with margin auto */
+  margin: 10px auto; /* Adds spacing and centers images */
+  border-radius: 15px; /* Adds round edges */
 }

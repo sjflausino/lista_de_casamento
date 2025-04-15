@@ -7,207 +7,219 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=League+Script&display=swap" rel="stylesheet">
+      <style>
+        body {
+          background-image: url('img/background.jpg');
+          background-size: cover;
+          background-position: center;
+          background-attachment: scroll; /* Acompanha a rolagem */
+        }
+      </style>
     </head>
     <body>
-      <header>
-        <nav class="principal">
-        <ul>
+      <div class="container">
+        <header>
+          <nav class="principal">
+          <ul>
+              <li>
+              <a  href="#nossa historia">Nossa História</a>
+            </li>
+
             <li>
-            <a  href="#nossa historia">Nossa História</a>
-          </li>
+              <a  href="#lista-presentes">Lista de Presentes</a>
+            </li>
+            <li>
+              <a href="#confirmacao-presenca">Confirmação Presença</a>
+            </li>          
+          </ul>
+          </nav> 
+        </header>
+        <div class="ReSData">
+          <h1>Raquel</h1>
+          <h1>&</h1>
+          <h1>Sandro</h1>
 
-          <li>
-            <a  href="#lista-presentes">Lista de Presentes</a>
-          </li>
-          <li>
-            <a href="#confirmacao-presenca">Confirmação Presença</a>
-          </li>          
-        </ul>
-        </nav> 
-      </header>
-      <div class="ReSData">
-        <div class='grGor'>
-          <h1>Raquel Sandro</h1>
-          <h2>17 / Maio / 2025</h2>
-          <h2>Sejam bem-vindos</h2>
         </div>
-        <img class='iiHstv' src= "img/cangaceiros.jpg" alt="Imagem do El Calafate ao entardecer.">
+
+        <section id="boas-vindas">
+          <p>🎁 É com muita alegria que compartilhamos com vocês a nossa lista de presentes de casamento!
+            Como muitos já nos perguntaram sobre isso, decidimos montar uma lista especial em forma de "cotas" que contribuirão diretamente para a realização da nossa lua de mel 🌍✨ 
+            
+          </br>
+          </br>
+          
+          👰🤵 Nosso maior presente, sem dúvida, é ter vocês conosco neste dia tão especial. Mas, caso queiram nos presentear, cada item da lista representa uma experiência que queremos viver juntos ou um presente que compraremos com o valor recebido. Tudo será destinado diretamente à nossa conta via PIX, através dos QR Codes que estão abaixo de cada item 📲💖
+          </br>
+          </br>
+            
+          <img src="img/img-arvore-coracao.jpg" alt="Foto de uma linda árvore seca coberta pela neve formando no topo dos galhos secos com neve um formato de coração.">
+
+          🛍️ Se preferirem, também disponibilizaremos os links para compra dos presentes físicos.
+
+          🙏 Agradecemos imensamente por todo o carinho e por fazerem parte da nossa história.
+          ❤️ Com amor, Raquel & Sandro.
+        </p>
+        </section>
+          <section id="nossa historia">
+            <h3 class="titulo-cinza">Nossa História</h3>
+            <img src="img/img-casal.jpeg" alt="Uma linda foto do casal apaixonado juntos.">
+            
+            <p>Tudo começou voltando de Goiânia (do batizado da minha amada afilhada Angelina), Dezembro de 2015 no aeroporto de GRU, enquanto eu esperava o Lira Bus até Campinas, resolvi fazer hora no Tinder, e 'dei um coração' pro Sandro... Dias depois, ele respondeu e começamos o início de 2 anos de muita conversa vitual... Até que ele propôs vir me conhecer... E de lá para cá, a afinidade foi tanta que já engatamos a nossa união!</p>
+
+          </section>
+
+          <section id="lista-presentes">
+            <h3 class="titulo-cinza">Lista de Presentes:</h3>
+          
+            <!-- Ferro de Passar -->
+            <p>Ferro de Passar R$ 50,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-ferro-passar.jpg" alt="Ferro de passar roupas.">
+            <img class="QRcodePix" src="img/qrcode-50-ferro.jpeg" alt="Pague agora.">
+            <p>
+              <input type="text" value="CHAVE-PIX-DO-FERRO-AQUI" id="pix-ferro" readonly style="width: 80%;">
+              <button onclick="copiarPix('pix-ferro')">Copiar Chave Pix</button>
+            </p>
+
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/ferro-de-passar-roupa-110v">Comprar Ferro de Passar</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Fritadeira -->
+            <p>Fritadeira (1 Litro) R$ 150,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-fritadeira.jpg" alt="Fritadeira elétrica.">
+            <img class="QRcodePix" src="img/qrcode-150-fritadeira.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/fritadeira-1l">Comprar Fritadeira Elétrica</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Tijelas de Sobremesa -->
+            <p>Potes de Sobremesa Inox R$ 50,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-potes-sobremesa.jpg" alt="Tijelas para sobremesa.">
+            <img class="QRcodePix" src="img/qrcode-50-potes.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/tijelas-de-sobremesa-inox?sb=rb#D[A:tijelas%20de%20sobremesa%20inox]">Comprar Tijelas de Sobremesa</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Jogo de Taças -->
+            <p>Jogo de Taças R$ 60,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-jogo-tacas.jpg" alt="Jogo de taças.">
+            <img class="QRcodePix" src="img/qrcode-60-tacas.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://www.magazineluiza.com.br/jogo-de-tacas-para-vinho-6-pecas-vidro-250ml/p/225005800/ud/udpt/">Comprar Jogo de Taças</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Panela de Pressão -->
+            <p>Panela de Pressão (5 Litros) R$ 150,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-panela-pressao.jpg" alt="Panela de pressão.">
+            <img class="QRcodePix" src="img/qrcode-150-panela.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/panela-de-press%C3%A3o-de-5l">Comprar Panela de Pressão</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Jogo de Roupa de Cama -->
+            <p>Jogo de Roupa de Cama – R$ 120,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-jogo-roupa-cama.jpg" alt="Jogo de roupa de cama.">
+            <img class="QRcodePix" src="img/qrcode-120-jogo-cama.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/jogo-de-roupa-de-cama#D[A:jogo%20de%20roupa%20de%20cama]">Comprar Jogo de Roupa de Cama</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Jogo de Toalha de Mesa ou Jogo Americano -->
+            <p>Jogo de Toalha de Mesa (ou Jogo Americano) – R$ 80,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-jogo-toalha-mesa.jpg" alt="Jogo de toalha de mesa.">
+            <img class="QRcodePix" src="img/qrcode-100-jogo-toalha.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/jogo-de-toalha-de-mesa#D[A:jogo%20de%20toalha%20de%20mesa]">Comprar Jogo de Toalha de Mesa</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Jogo de Toalha de Banho -->
+            <p>Jogo de Toalha de Banho – R$ 100,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-jogo-toalha-banho.jpg" alt="Jogo de toalha de banho.">
+            <img class="QRcodePix" src="img/qrcode-100-jogo-toalha.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/jogo-de-toalha-de-banho?sb=rb#D[A:jogo%20de%20toalha%20de%20banho]">Comprar Jogo de Toalha de Banho</a></li>
+              
+            </ul>
+            <hr>
+          
+            <!-- Enxada -->
+            <p>Uma Enxada Larga de Jardim – R$ 50,00</p>
+            <p>Presentear os Noivos:</p>
+            <img class="lista_img" src="img/img-enxada.jpg" alt="Uma enxada.">
+            <img class="QRcodePix" src="img/qrcode-50-enxada.jpeg" alt="Pague agora.">
+            <ul>
+              <li><a href="https://lista.mercadolivre.com.br/enxada-larga-de-jardim">Comprar Enxada</a></li>            
+            </ul>
+            <hr>
+          </section>
+          
+
+          <section id="confirmacao-presenca">
+            <h3 class="titulo-cinza">Confirmação de Presença</h3>
+
+            <p>Para nos organizarmos melhor, pedimos que você confirme sua presença preenchendo o formulário abaixo:</p>
+          
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4kZ_zNBH9IQeRPrfYsG-niEaqgwPLGgjfhr81JVCZJjhuGQ/viewform?embedded=true" width="800" height="1500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>        </section>
+          
+          <section id="mensagens aos noivos">
+            <h2 class="titulo-cinza">💌 Agradecimento dos Noivos</h2>
+            <p style="text-align: center;">
+              Será <strong>incrível ter vocês conosco</strong> para sentir ainda mais a emoção desse momento tão especial!<br>
+              Ficamos imensamente felizes com sua <strong>presença, carinho e amizade</strong>. <br>
+              Aqui fica registrado todo o nosso agradecimento! 💛
+            </p>
+            <p style="text-align: center;">
+              📅 <strong>Data:</strong> 17 de maio de 2025<br>
+              📍 <strong>Local:</strong> <a href="https://linktr.ee/sitiosolarbougainvillea" target="_blank" style="color: var(--accent-color); text-decoration: none;">Sítio Solar Bougainvillea</a><br>
+              🏡 <strong>Endereço:</strong> Rua Turiaçu, 57, Casa 1 – Laranjal, São Gonçalo – RJ, 24720-370, Brasil<br>
+              📧 <strong>Contato:</strong> <a href="mailto:sitiosolar.bougainvilleamkt@gmail.com" style="color: var(--accent-color); text-decoration: none;">sitiosolar.bougainvilleamkt@gmail.com</a>
+            </p>
+          
+            <div style="text-align: center; margin-top: 20px;">
+              <iframe 
+                src="https://www.google.com/maps?q=Rua+Turiaçu,+57,+Casa+1,+Laranjal,+São+Gonçalo,+RJ,+24720-370,+Brasil&output=embed" 
+                width="80%" 
+                height="250" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          
+            <p style="text-align: center; margin-top: 15px;">
+              Estamos contando os dias para viver esse sonho com vocês! ✨💍
+            </p>
+          </section>
+          <footer>
+            <div class="footer">
+              <p>© 2025 Raquel e Sandro. Todos os direitos reservados.</p>
+            </div>
+          </footer>
+
+        <script type="text/javascript" src="js/script.js"></script>
       </div>
-
-      <section id="boas-vindas">
-        <p>🎁 É com muita alegria que compartilhamos com vocês a nossa lista de presentes de casamento!
-          Como muitos já nos perguntaram sobre isso, decidimos montar uma lista especial em forma de "cotas" que contribuirão diretamente para a realização da nossa lua de mel 🌍✨ 
-          
-        </br>
-        </br>
-        
-        👰🤵 Nosso maior presente, sem dúvida, é ter vocês conosco neste dia tão especial. Mas, caso queiram nos presentear, cada item da lista representa uma experiência que queremos viver juntos ou um presente que compraremos com o valor recebido. Tudo será destinado diretamente à nossa conta via PIX, através dos QR Codes que estão abaixo de cada item 📲💖
-        </br>
-        </br>
-          
-        <img src="img/img-arvore-coracao.jpg" alt="Foto de uma linda árvore seca coberta pela neve formando no topo dos galhos secos com neve um formato de coração.">
-
-        🛍️ Se preferirem, também disponibilizaremos os links para compra dos presentes físicos.
-
-        🙏 Agradecemos imensamente por todo o carinho e por fazerem parte da nossa história.
-        ❤️ Com amor, Raquel & Sandro.
-      </p>
-      </section>
-        <section id="nossa historia">
-          <h3 class="titulo-cinza">Nossa História</h3>
-          <img src="img/img-casal.jpeg" alt="Uma linda foto do casal apaixonado juntos.">
-          
-          <p>Tudo começou voltando de Goiânia (do batizado da minha amada afilhada Angelina), Dezembro de 2015 no aeroporto de GRU, enquanto eu esperava o Lira Bus até Campinas, resolvi fazer hora no Tinder, e 'dei um coração' pro Sandro... Dias depois, ele respondeu e começamos o início de 2 anos de muita conversa vitual... Até que ele propôs vir me conhecer... E de lá para cá, a afinidade foi tanta que já engatamos a nossa união!</p>
-
-        </section>
-
-        <section id="lista-presentes">
-          <h3 class="titulo-cinza">Lista de Presentes:</h3>
-        
-          <!-- Ferro de Passar -->
-          <p>Ferro de Passar R$ 50,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/img-ferro-passar.jpg" alt="Pague agora.">
-          <img src="img/img-ferro-passar.jpg" alt="Ferro de passar roupas.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/ferro-de-passar-roupa-110v">Comprar Ferro de Passar</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Fritadeira -->
-          <p>Fritadeira (1 Litro) R$ 150,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/img-fritadeira.jpg" alt="Pague agora.">
-          <img src="img/img-fritadeira.jpg" alt="Fritadeira elétrica.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/fritadeira-1l">Comprar Fritadeira Elétrica</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Tijelas de Sobremesa -->
-          <p>Potes de Sobremesa Inox R$ 50,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/qrcode-50-potes.jpeg" alt="Pague agora.">
-          <img src="img/img-potes-sobremesa.jpg" alt="Tijelas para sobremesa.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/tijelas-de-sobremesa-inox?sb=rb#D[A:tijelas%20de%20sobremesa%20inox]">Comprar Tijelas de Sobremesa</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Jogo de Taças -->
-          <p>Jogo de Taças R$ 60,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/qrcode-60-tacas.jpeg" alt="Pague agora.">
-          <img src="img/img-jogo-tacas.jpg" alt="Jogo de taças.">
-          <ul>
-            <li><a href="https://www.magazineluiza.com.br/jogo-de-tacas-para-vinho-6-pecas-vidro-250ml/p/225005800/ud/udpt/">Comprar Jogo de Taças</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Panela de Pressão -->
-          <p>Panela de Pressão (5 Litros) R$ 150,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/img-panela-pressao.jpg" alt="Pague agora.">
-          <img src="img/img-panela-pressao.jpg" alt="Panela de pressão.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/panela-de-press%C3%A3o-de-5l">Comprar Panela de Pressão</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Jogo de Roupa de Cama -->
-          <p>Jogo de Roupa de Cama – R$ 120,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/img-jogo-roupa-cama.jpg" alt="Pague agora.">
-          <img src="img/img-jogo-roupa-cama.jpg" alt="Jogo de roupa de cama.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/jogo-de-roupa-de-cama#D[A:jogo%20de%20roupa%20de%20cama]">Comprar Jogo de Roupa de Cama</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Jogo de Toalha de Mesa ou Jogo Americano -->
-          <p>Jogo de Toalha de Mesa (ou Jogo Americano) – R$ 80,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/img-jogo-toalha-mesa.jpg" alt="Pague agora.">
-          <img src="img/img-jogo-toalha-mesa.jpg" alt="Jogo de toalha de mesa.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/jogo-de-toalha-de-mesa#D[A:jogo%20de%20toalha%20de%20mesa]">Comprar Jogo de Toalha de Mesa</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Jogo de Toalha de Banho -->
-          <p>Jogo de Toalha de Banho – R$ 100,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/img-jogo-toalha-banho.jpg" alt="Pague agora.">
-          <img src="img/img-jogo-toalha-banho.jpg" alt="Jogo de toalha de banho.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/jogo-de-toalha-de-banho?sb=rb#D[A:jogo%20de%20toalha%20de%20banho]">Comprar Jogo de Toalha de Banho</a></li>
-            
-          </ul>
-          <hr>
-        
-          <!-- Enxada -->
-          <p>Uma Enxada Larga de Jardim – R$ 50,00</p>
-          <p>Presentear os Noivos:</p>
-          <img class="QRcodePix" src="img/img-echada.jpg" alt="Pague agora.">
-          <img src="img/img-echada.jpg" alt="Uma enxada.">
-          <ul>
-            <li><a href="https://lista.mercadolivre.com.br/enxada-larga-de-jardim">Comprar Enxada</a></li>
-            
-          </ul>
-          <hr>
-        </section>
-        
-
-        <section id="confirmacao-presenca">
-          <h3 class="titulo-cinza">Confirmação de Presença</h3>
-
-          <p>Para nos organizarmos melhor, pedimos que você confirme sua presença preenchendo o formulário abaixo:</p>
-        
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4kZ_zNBH9IQeRPrfYsG-niEaqgwPLGgjfhr81JVCZJjhuGQ/viewform?embedded=true" width="800" height="1500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>        </section>
-        
-        <section id="mensagens aos noivos">
-          <h2 class="titulo-cinza">💌 Agradecimento dos Noivos</h2>
-          <p style="text-align: center;">
-            Será <strong>incrível ter vocês conosco</strong> para sentir ainda mais a emoção desse momento tão especial!<br>
-            Ficamos imensamente felizes com sua <strong>presença, carinho e amizade</strong>. <br>
-            Aqui fica registrado todo o nosso agradecimento! 💛
-          </p>
-          <p style="text-align: center;">
-            📅 <strong>Data:</strong> 17 de maio de 2025<br>
-            📍 <strong>Local:</strong> <a href="https://linktr.ee/sitiosolarbougainvillea" target="_blank" style="color: var(--accent-color); text-decoration: none;">Sítio Solar Bougainvillea</a><br>
-            🏡 <strong>Endereço:</strong> Rua Turiaçu, 57, Casa 1 – Laranjal, São Gonçalo – RJ, 24720-370, Brasil<br>
-            📧 <strong>Contato:</strong> <a href="mailto:sitiosolar.bougainvilleamkt@gmail.com" style="color: var(--accent-color); text-decoration: none;">sitiosolar.bougainvilleamkt@gmail.com</a>
-          </p>
-        
-          <div style="text-align: center; margin-top: 20px;">
-            <iframe 
-              src="https://www.google.com/maps?q=Rua+Turiaçu,+57,+Casa+1,+Laranjal,+São+Gonçalo,+RJ,+24720-370,+Brasil&output=embed" 
-              width="80%" 
-              height="250" 
-              style="border:0; border-radius: 8px;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-        
-          <p style="text-align: center; margin-top: 15px;">
-            Estamos contando os dias para viver esse sonho com vocês! ✨💍
-          </p>
-        </section>
-        <footer>
-          <div class="footer">
-            <p>© 2025 Raquel e Sandro. Todos os direitos reservados.</p>
-          </div>
-        </footer>
-
-      <script type="text/javascript" src="js/script.js"></script>
     </body>
   </html>
