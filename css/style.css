@@ -177,13 +177,11 @@ nav ul li a:hover {
   line-height: 0.8; /* Reduced line height to decrease space between text */
   font-family: "Charm", cursive;
   margin: 10px; /* Reduced margin for less spacing around the text */
-  background-image: url('img/casal-2.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: cover, contain;
+  background-position: center, center;
   background-attachment: scroll; /* Acompanha a rolagem */
-    
+  background-blend-mode: overlay; /* Combines the image and gradient */
 }
-
 
 /* ==========================
   Responsive Design
