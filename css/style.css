@@ -70,7 +70,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  font-size: 1.2em; /* Increased font size */
+  font-size: 1.5em; /* Increased font size */
   box-shadow: 0 2px 5px var(--box-shadow-color); /* Added shadow for better visibility */
 }
 
@@ -94,7 +94,10 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+  text-shadow: 0 0 5px var(--secondary-color);
 }
 
 body {
@@ -122,7 +125,7 @@ section {
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   box-shadow: 0 2px 5px var(--box-shadow-color);
 }
@@ -139,6 +142,8 @@ section {
   width: 150px;
   margin: 10px auto;
   display: block;
+  border-radius: 15px; /* Adds round edges */
+
 }
 
 /* ==========================
@@ -168,29 +173,17 @@ nav ul li a:hover {
   Welcome Section
   ========================== */
 .ReSData {
-  text-align: center;
-  margin-top: 20px;
-  margin-top: 20px;
-  padding: 20px;
-
-}
-
-.ReSData h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 2.4em; /* Increased font size */
+  line-height: 0.8; /* Reduced line height to decrease space between text */
   font-family: "Charm", cursive;
-
+  margin: 10px; /* Reduced margin for less spacing around the text */
+  background-image: url('img/casal-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll; /* Acompanha a rolagem */
+    
 }
 
-.ReSData h2 {
-  font-size: 1.5em;
-  margin-bottom: 5px;
-}
-
-
-h1, h2 {
-  font-family: 'Arial', cursive;
-}
 
 /* ==========================
   Responsive Design
@@ -239,4 +232,68 @@ footer .footer p {
   display: block; /* Centers images when combined with margin auto */
   margin: 10px auto; /* Adds spacing and centers images */
   border-radius: 15px; /* Adds round edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for a subtler effect */
+}
+
+.img-casal {
+  width: 600px; /* Adjusted width for consistent proportions */
+  height: 300px; /* Adjusted height for consistent proportions */
+  object-fit: cover; /* Ensures images maintain aspect ratio while filling the dimensions */
+  display: block; /* Centers images when combined with margin auto */
+  margin: 10px auto; /* Adds spacing and centers images */
+  border-radius: 15px; /* Adds round edges */
+}
+
+.presentes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  text-align: center; /* Centers text inside grid items */
+}
+
+.presente {
+  background-color: #ffffff;
+  border: 1px solid #e6e2d3;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center; /* Centers text inside each item */
+}
+
+.presente h4 {
+  color: #424800;
+}
+
+.presente img.lista_img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.presente img.QRcodePix {
+  width: 150px;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.presente ul {
+  margin-top: 0.5rem;
+}
+
+.link {
+  color: var(--white);
+  background-color: var(--accent-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
 }
